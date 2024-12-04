@@ -36,4 +36,6 @@ jobs:
           python -m pip install -r requirements.txt
       # Runs a python script
       - name: Run Python Script
+        env:
+          DISCORD_BOT_TEST_KEY: ${{ secrets.DISCORD_BOT_TEST_KEY }}
         run: python main.py
