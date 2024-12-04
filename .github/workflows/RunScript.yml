@@ -32,5 +32,4 @@ jobs:
           python-version: '3.13'
         # Runs a python script
       - name: Run Python Script
-        run: |
-          python main.py
+      - run: python main.py
